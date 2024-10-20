@@ -1,0 +1,14 @@
+{
+    "type": "module",
+    "scripts": {
+        "clean": "rm -f ./dist/*",
+        "clean-dev": "rm -f ./dev/*",
+        "build": "npm run clean && node esbuild.config.mjs production",
+        "dev": "npm run clean-dev && node esbuild.config.mjs development"
+    },
+    "devDependencies": {
+        "esbuild": "0.24.0",
+        "prettier": "3.3.3",
+        "typescript": "^5.5.4"
+    }
+}
